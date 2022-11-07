@@ -1,6 +1,4 @@
 resource "helm_release" "datadog" {
-  count = var.datadog_enabled ? 1 : 0
-
   namespace        = "datadog"
   create_namespace = true
 
