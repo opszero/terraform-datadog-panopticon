@@ -1,0 +1,13 @@
+datadog:
+  targetSystem: linux
+  logs:
+    enabled: true
+    containerCollectAll: true
+  dogstatsd:
+    useHostPort: true
+    nonLocalTraffic: true
+  apm:
+    portEnabled: true
+  securityAgent:
+    compliance:
+      enabled: true
